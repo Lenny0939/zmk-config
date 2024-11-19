@@ -11,14 +11,31 @@
 
 / {
     behaviors {
-        ht: hold_tap {
-            compatible = "zmk,behavior-hold-tap";
-            #binding-cells = <2>;
-            flavor = "tap-preferred";
-            tapping-term-ms = <220>;
-            quick-tap-ms = <150>;
-            require-prior-idle-ms = <100>;
-            bindings = <&kp>, <&kp>;
+        magic: magic {
+            compatible = "zmk,behavior-antecedent-morph";
+            label = "magic";
+            #binding-cells = <0>;
+            defaults = <&sk LSHIFT>;
+            bindings =
+                <&kp W>,
+                <&kp G>,
+                <&kp Y>,
+                <&kp U>,
+                <&kp APOS>,
+                <&kp S>,
+                <&kp E>,
+                <&kp T>,
+                <&kp F>,
+                <&kp L>,
+                <&kp M>,
+                <&kp O>,
+                <&kp R>,
+                <&kp P>,
+                <&kp C>,
+                <&kp SPACE>,
+
+            max-delay-ms = <200>;
+            antecedents = <H S COMMA E M S E T F L M O R P C &sk LSHIFT>;
         };
     };
     conditional_layers {
