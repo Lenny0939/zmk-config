@@ -32,10 +32,10 @@
                 <&kp R>,
                 <&kp P>,
                 <&kp C>,
-                <&kp SPACE>,
+                <&kp SPACE>;
 
             max-delay-ms = <200>;
-            antecedents = <H S COMMA E M S E T F L M O R P C LSHIFT>;
+            antecedents = <H S COMMA E M S E T F L M O R P C &sk LSHIFT>;
         };
     };
     conditional_layers {
