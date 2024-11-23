@@ -33,7 +33,7 @@
     behaviors {
         magic: magic {
             compatible = "zmk,behavior-antecedent-morph";
-            label = "magic";
+            label = "MAGIC";
             #binding-cells = <0>;
             defaults = <&sk LSHIFT>;
             bindings =
@@ -55,7 +55,7 @@
                 <&kp SPACE>;
 
             max-delay-ms = <200>;
-            antecedents = <H S COMMA E M S E T F L M O R P C &sk LSHIFT>;
+            antecedents = <H S COMMA E M S E T F L M O R P C LSHIFT>;
         };
     };
     conditional_layers {
