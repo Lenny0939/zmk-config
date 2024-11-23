@@ -35,7 +35,7 @@
             compatible = "zmk,behavior-antecedent-morph";
             label = "MAGIC";
             #binding-cells = <0>;
-            defaults = <&sk SHIFT>;
+            defaults = <&sk LSHIFT>;
             bindings =
                 <&kp W>,
                 <&kp G>,
