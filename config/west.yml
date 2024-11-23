@@ -2,14 +2,16 @@ manifest:
   remotes:
     - name: zmkfirmware
       url-base: https://github.com/zmkfirmware
-    - name: magiczmk
+    - name: voidyourwarranty
       url-base: https://github.com/voidyourwarranty2
-    # Additional modules containing boards/shields/custom code can be listed here as well
-    # See https://docs.zephyrproject.org/3.2.0/develop/west/manifest.html#projects
   projects:
+    # - name: zmk
+    #   remote: zmkfirmware
+    #   revision: main
+    #   import: app/west.yml
     - name: zmk
-      remote: magiczmk
-      revision: main
+      remote: voidyourwarranty
+      revision: devel-adaptive
       import: app/west.yml
   self:
     path: config
