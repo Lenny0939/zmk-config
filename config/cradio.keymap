@@ -35,7 +35,7 @@
             compatible = "zmk,behavior-antecedent-morph";
             label = "MAGIC";
             #binding-cells = <0>;
-            defaults = <&kp T>;
+            defaults = <&kp LSHIFT>;
             bindings =
                 <&kp H>,
                 <&kp S>,
@@ -56,7 +56,7 @@
                 <&kp SPACE>;
 
             max-delay-ms = <200>;
-            antecedents = <W Y G U P APOS S E T F L M O R P C &sk LSHIFT>;
+            antecedents = <W Y G U P APOS S E T F L M O R P C LSHIFT>;
         };
     };
     conditional_layers {
