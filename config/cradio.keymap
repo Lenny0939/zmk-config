@@ -53,10 +53,11 @@
                 <&kp R>,
                 <&kp P>,
                 <&kp C>,
+                <&kp N>,
                 <&kp SPACE>;
 
             max-delay-ms = <200>;
-            antecedents = <W Y G U P APOS S E T F L M O R P C LSHIFT>;
+            antecedents = <W Y G U P APOS S E T F L M O R P C LSHIFT N>;
         };
     };
     conditional_layers {
@@ -73,18 +74,18 @@
             bindings = <
         //╭──────────┬──────────┬──────────┬──────────┬──────────╮   ╭──────────┬──────────┬──────────┬──────────┬──────────╮
 				//  0          1          2          3          4              5          6          7          8          9
-            &kp Q      &kp G      &kp D      &kp F      &kp APOS       &kp Q      &kp L      &kp U      &kp O      &kp Y
+            &kp Q      &kp G      &kp D      &kp F      &kp V       &kp Z      &kp L      &kp U      &kp O      &kp Y
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
 				//  10         11         12         13         14             15         16         17         18         19
-            &kp N      &kp S      &kp T      &kp H      &kp M          &kp Z      &kp R      &kp E      &kp A      &kp I
+            &kp N      &kp S      &kp T      &kp H      &kp M          &kp APOS   &kp R      &kp E      &kp A      &kp I
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
 				//  20         21         22         23         24             25         26         27         28         29
-            &kp B      &kp C      &kp V      &kp W      &kp K          &kp X      &kp J      &kp SEMI   &kp DOT    &kp COMMA
+            &kp B      &kp C      &kp P      &kp W      &kp K          &kp X      &kp J      &kp SEMI   &kp DOT    &kp COMMA
         //╰──────────┴──────────┴──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┴──────────┴──────────╯
 				//                                   30         31            32          33
                                              &mo 1      &kp SPACE     &magic      &mo 2
         //                                 ╰──────────┴──────────╯   ╰──────────┴──────────╯
-            >;
+            >
         };
 
         left_layer {
@@ -92,7 +93,7 @@
         //╭──────────┬──────────┬──────────┬──────────┬──────────╮   ╭──────────┬──────────┬──────────┬──────────┬──────────╮
             &kp EXCL   &kp AT     &kp HASH   &kp DLLR  &kp PRCNT      &kp CARET  &kp AMPS   &kp ASTRK  &kp GRAVE  &kp TILDE
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
-            &kp UNDER  &kp LPAR   &kp RPAR   &kp LALT  &trans         &kp LEFT   &kp DOWN   &kp UP     &kp RIGHT  &kp QMARK
+            &kp UNDER  &kp LPAR   &kp RPAR   &sk LALT  &trans         &kp LEFT   &kp DOWN   &kp UP     &kp RIGHT  &kp QMARK
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
             &kp COLON  &trans     &kp MINUS  &sk LCTRL &trans         &kp HOME   &kp PG_DN  &kp PG_UP  &kp END    &caps_word
         //╰──────────┴──────────┴──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┴──────────┴──────────╯
