@@ -123,7 +123,7 @@
            &sys_reset  &trans     &trans     &trans    &bt BT_SEL 0    &trans  &kp C_BRI_UP &kp C_BRI_DN &trans    &trans
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
         //│BOOTLOADER│          │          │          │PROFILE 1 │   │          │          │          │          │          │
-          &bootloader  &trans     &trans     &trans    &bt BT_SEL 1    &trans  &kp C_VOL_UP &kp C_VOL_DN &C_MUTE    &trans
+          &bootloader  &trans     &trans     &trans    &bt BT_SEL 1    &trans &kp C_VOL_UP &kp C_VOL_DN &kp C_MUTE &trans
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
         //│          │          │          │ CLEAR BT │PROFILE 2 │   │          │          │          │          │          │
             &trans     &trans     &trans    &bt BT_CLR &bt BT_SEL 2    &trans     &trans     &trans     &trans     &trans
