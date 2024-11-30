@@ -57,7 +57,7 @@
                 <&kp SPACE>;
 
             max-delay-ms = <200>;
-            antecedents = <W Y G U P APOS S E T F L M O R P C LSHIFT N>;
+            antecedents = <W G Y U P APOS S E T F L M O R P C N LSHIFT>;
         };
     };
     conditional_layers {
@@ -119,11 +119,11 @@
         tri_layer {
             bindings = <
         //╭──────────┬──────────┬──────────┬──────────┬──────────╮   ╭──────────┬──────────┬──────────┬──────────┬──────────╮
-        //│ RESET    │          │          │          │PROFILE 0 │   │          │          │          │          │  RESET   │
-           &sys_reset  &trans     &trans     &trans    &bt BT_SEL 0    &trans     &trans     &trans     &trans    &sys_reset
+        //│ RESET    │          │          │          │PROFILE 0 │   │          │          │          │          │          │
+           &sys_reset  &trans     &trans     &trans    &bt BT_SEL 0    &trans  &kp C_BRI_UP &kp C_BRI_DN &trans    &trans
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
-        //│BOOTLOADER│          │          │          │PROFILE 1 │   │          │          │          │          │BOOTLOADER│
-          &bootloader  &trans     &trans     &trans    &bt BT_SEL 1    &trans     &trans     &trans     &trans    &bootloader
+        //│BOOTLOADER│          │          │          │PROFILE 1 │   │          │          │          │          │          │
+          &bootloader  &trans     &trans     &trans    &bt BT_SEL 1    &trans  &kp C_VOL_UP &kp C_VOL_DN &C_MUTE    &trans
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
         //│          │          │          │ CLEAR BT │PROFILE 2 │   │          │          │          │          │          │
             &trans     &trans     &trans    &bt BT_CLR &bt BT_SEL 2    &trans     &trans     &trans     &trans     &trans
